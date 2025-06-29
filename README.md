@@ -1,7 +1,2 @@
-# Juego
-juego para la clase de logica de la programacion
-Es un juego de piedra papel o tijeras
-Usa completamente python
-Las librerias que use fueron .tkinter y .random en este caso ya venian instalas en python asi que no tuve que bajarlas
-El juego es bastante sencillo solo escribes en la entrada de texto una de las tres opciones y la pc hara lo mismo de forma random y segun eso va ser un print si ganaste empataste o perdiste
-hecho por Ricardo :)
+juego para la clase de logica de la programacion Es un juego de piedra papel o tijeras Usa completamente python lo edite basicamente desde cero eliminando el tkinter por completo ya que aun tengo complicaciones con el cambio de ventanas usando la libreria asi que decidi hacerlo todo desde la terminal de codigo la unica libreria usada es random para el modo contra la computadora, el juego consta de un menu con 4 opciones entre ellas esta el modo contra ccomputadora , el modo multijugador tambien tiene ver estadisticas que permite ver el resultado del ultimo juego y por ultimo la opcion de salir que termina el codigo.
+terminado el 28/6/2025
