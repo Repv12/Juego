@@ -3,7 +3,16 @@ import tkinter
 import random
 #libreria que me permite randomizar entre opciones
 
-def jugar():
+def jugar1():
+    escoger=["piedra", "papel", "tijera"]
+    opciones= entrada.get().lower().strip()
+    # en esta variable guardo  lo q escriba el usuario el lower lo uso para q se ponga todo en minuscula y haya menos chance de error escrbiendo y el strip elimina espacios vacios
+    if opciones not in escoger:
+        resultado.config(text="por favor solo escribe piedra, papel o tijera")
+        entrada.set("")
+        return
+
+def jugar2():
     escoger=["piedra", "papel", "tijera"]
     opciones= entrada.get().lower().strip()
     # en esta variable guardo  lo q escriba el usuario el lower lo uso para q se ponga todo en minuscula y haya menos chance de error escrbiendo y el strip elimina espacios vacios
@@ -70,7 +79,18 @@ tkinter.Button(
     text="Ingresar",
     bg="gray",
     fg="white",
-    command=jugar
+    command=jugar1
+    ).pack(
+      fill=tkinter.BOTH,
+      expand=True
+      )
+        
+tkinter.Button(
+    juego,
+    text="Ingresar",
+    bg="gray",
+    fg="white",
+    command=jugar2
     ).pack(
       fill=tkinter.BOTH,
       expand=True
